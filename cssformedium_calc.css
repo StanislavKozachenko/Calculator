@@ -4,10 +4,6 @@
 	padding: 0;
 	font-family: sans-serif;
 }
-#First_Section {
-	height: 100vh;
-	background-color: #55efc4;
-}
 #My_Name {
 	display: flex;
 	justify-content: center;
@@ -15,6 +11,10 @@
 	color: #fff;
 	font-weight: bold;
 	font-size: 30px;
+}
+#First_Section {
+	height: 100vh;
+	background-color: #55efc4;
 }
 .Wrapper {
 	position: absolute;
@@ -34,6 +34,15 @@
 	padding: 20px;
 	margin: 5px;
 	font-size: 14px;
+	box-shadow: 0px 0px 3px 1px #000000;
+	transition: 0.2s;
+}
+.Buttons button:hover {
+	transition: 0.2s;
+	background-color: #a29bfe;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
 }
 #Input {
 	width: calc(95% - 10px);
@@ -47,6 +56,8 @@
 	padding-top: 5%;
 	font-size: 20px;
 	overflow: hidden;
+	box-shadow: 0px 0px 3px 1px #000000;
+	font-family: Lato;
 }
 #Ravn {
 	grid-column-start: 4;
