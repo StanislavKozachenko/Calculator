@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#First_Section {
+	height: 100vh;
+	background-color: #55efc4;
+}
+.Wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 40vh;
+	width: 40vh;
+}
+.Buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Buttons button {
+	border: none;
+	background-color: #fff;
+	padding: 20px;
+	margin: 5px;
+	font-size: 14px;
+}
+#Input {
+	width: calc(95% - 10px);
+	border: none;
+	height: 40px;
+	padding-right: 5%;
+	margin: 5px;
+	background-color: #fff;
+	text-align: right;
+	color: black;
+	padding-top: 5%;
+	font-size: 20px;
+	overflow: hidden;
+}
+#Ravn {
+	grid-column-start: 4;
+	grid-row-start: 1/5;
+	grid-row: 4;
+	grid-column: 4/5;
+	grid-row: 4/6;
+}
+#Null {
+	grid-column: 1/3;
+}
