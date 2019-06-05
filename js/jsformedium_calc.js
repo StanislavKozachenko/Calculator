@@ -1,4 +1,5 @@
 //Begining!
+//by Stanislav Kozacheko - https://github.com/StanislavKozachenko/
 var main = document.getElementById('Input');
 function Clear() {
 	main.innerHTML = '';
