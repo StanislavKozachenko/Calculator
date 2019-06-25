@@ -5,8 +5,12 @@
 	font-family: sans-serif;
 }
 #My_Name {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-top: 5%;
 	color: #fff;
 	font-weight: bold;
@@ -20,12 +24,16 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	height: 40vh;
 	width: 40vh;
 }
 .Buttons {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .Buttons button {
@@ -34,10 +42,15 @@
 	padding: 20px;
 	margin: 5px;
 	font-size: 14px;
-	box-shadow: 0px 0px 3px 1px #000000;
+	-webkit-box-shadow: 0px 0px 3px 1px #000000;
+	        box-shadow: 0px 0px 3px 1px #000000;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 }
 .Buttons button:hover {
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 	background-color: #a29bfe;
 	cursor: pointer;
@@ -56,16 +69,23 @@
 	padding-top: 5%;
 	font-size: 20px;
 	overflow: hidden;
-	box-shadow: 0px 0px 3px 1px #000000;
+	-webkit-box-shadow: 0px 0px 3px 1px #000000;
+	        box-shadow: 0px 0px 3px 1px #000000;
 	font-family: Lato;
 }
 #Ravn {
-	grid-column-start: 4;
+	-ms-grid-column: 4;
+	    grid-column-start: 4;
 	grid-row-start: 1/5;
+	-ms-grid-row: 4;
 	grid-row: 4;
+	-ms-grid-column-span: 1;
 	grid-column: 4/5;
+	-ms-grid-row-span: 2;
 	grid-row: 4/6;
 }
 #Null {
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 2;
 	grid-column: 1/3;
 }
